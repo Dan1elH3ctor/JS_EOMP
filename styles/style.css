@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(https://i.pinimg.com/originals/9f/42/53/9f42530c25a1c3497769ed70f3d49bf6.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+}
+
+
+body{
+    background-color:rgb(4, 31, 4);
+}
+
+/* logo drop down & style */
+.logo{
+    border-radius: 90px;
+    width: 7rem;
+    padding: 5px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    position: fixed;
+}
+
+nav{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    padding: 5px;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+}
+.dropdown:hover nav{
+    display: block;
+}
+
+/* footer*/
+footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(221, 160, 221, 0.8);
+    color: white;
+    text-align: center;
+  }
+
+/* About style */
+.About{
+    background-color: rgba(221, 160, 221, 0.6);
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+
+/* responsiveness */
+@media screen and (max-width: 300px) {
+    * {
+        width: 100%;
+    }
+    
+}
