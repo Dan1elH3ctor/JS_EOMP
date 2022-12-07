@@ -4,6 +4,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: whitesmoke;
+    font-family: 'Cinzel Decorative', cursive;
+}
+:root{
+    --mygreen: rgb(4, 31, 4);
+    --myplum: plum;
+    --secondplum: rgb(184, 131, 184);
+    --opacityplum: rgba(221, 160, 221, 0.6);
+
 }
 
 header{
@@ -15,7 +24,7 @@ header{
 
 
 body{
-    background-color:rgb(4, 31, 4);
+    background-color:var(--mygreen);
 }
 
 /* logo drop down & style */
@@ -25,42 +34,40 @@ body{
     padding: 5px;
 }
 
-.dropdown{
+.dropdownHover{
     position: relative;
     display: inline-block;
     position: fixed;
 }
 
-nav{
+.content{
     z-index: 1;
     display: none;
     position: absolute;
     text-decoration: none;
+
 }
 
 li{
     list-style: none;
     padding: 5px;
-    text-shadow: 0 0 5px black, 0 0 5px black;
 }
-.dropdown:hover nav{
+.dropdownHover:hover .content{
     display: block;
 }
 
 /* footer*/
 footer {
-
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(221, 160, 221, 0.8);
-    color: white;
+    background-color: var(--opacityplum);
     text-align: center;
   }
 
 /* About style */
 .About{
-    background-color: rgba(221, 160, 221, 0.6);
+    background-color: var(--opacityplum);
     border-radius: 50px;
     text-align: center;
     padding: 10px;
@@ -69,7 +76,40 @@ footer {
     margin-right: 20px;
 }
 
+/* Admin CSS */
+/* Sort button dropdown */
+.sortby {
+    position: relative;
+    display: inline-block;
+    background-color: var(--myplum);
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .filters{
+    display: none;
+    position: relative;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    background-color: var(--mygreen);
+    border-radius: 10px;
+  }
+  
+  .sortby:hover .filters{
+    display: block;
+  }
 
+  .sortby:hover{
+    background-color: var(--secondplum);
+  }
+/* Table */
+tbody{
+    background-image: url(https://pbs.twimg.com/media/Eu2Ys4CXMAAfISc.jpg);
+    background-size: cover;
+}
 /* responsiveness */
 @media screen and (max-width: 300px) {
     * {
