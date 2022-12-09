@@ -61,6 +61,9 @@ Object.keys(art).forEach((artIndex) => {
     `
 })
 
+// text input
+let textInput = document.querySelector(".inputfields")
+
 // delete
 
 
