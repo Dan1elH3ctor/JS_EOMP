@@ -97,6 +97,10 @@ footer {
     background-color: var(--mygreen);
     border-radius: 10px;
   }
+  .filters button{
+    background-color: unset;
+    border: none;
+  }
   
   .sortby:hover .filters{
     display: block;
@@ -119,6 +123,18 @@ button{
     background-color: black;
     border-radius: 10px;
 }
+
+/* Product page */
+.Product{
+    padding-top: 25px;
+}
+
+.Product img{
+    width: 25rem;
+    border: solid 10px var(--opacityplum);
+    border-radius: 10px;
+}
+
 
 /* responsiveness */
 @media screen and (max-width: 300px) {

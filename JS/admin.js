@@ -35,32 +35,80 @@ localStorage.setItem('Catalog', JSON.stringify([
         Medium: "Acrylic",
         price: 130
     },
-    // {
-    //     size: "A4",
-    //     image:"",
-    //     Title: "sixth",
-    //     Medium: "pencil",
-    //     price: 80
-    // }
 ]));
 // parse to table
 let art = JSON.parse(localStorage.getItem('Catalog'));
 
-Object.keys(art).forEach((artIndex) => {
-    let a = art[artIndex];
-    let b = document.querySelector('tbody');
-    b.innerHTML += `
-    <tr>                                                      
-        <td>${a.size}</td>
-        <td><img src="${a.image}"></td>
-        <td>${a.Title}</td>
-        <td>${a.Medium}</td>
-        <td>${a.price}</td>
-        <td><button>delete</button></td>
-        <td><button>edit</button></td>
-    </tr>
-    `
-})
+// Object.keys(art).forEach((artIndex) => {
+//     let a = art[artIndex];
+//     let b = document.querySelector('tbody');
+//     b.innerHTML += `
+//     <tr>                                                      
+//         <td>${a.size}</td>
+//         <td><img src="${a.image}"></td>
+//         <td>${a.Title}</td>
+//         <td>${a.Medium}</td>
+//         <td>R${a.price}</td>
+//         <td><button>delete</button></td>
+//         <td><button>edit</button></td>
+//     </tr>
+//     `
+// })
+function tableDisplay(){
+    Object.keys(art).forEach((artIndex) => {
+        let a = art[artIndex];
+        let b = document.querySelector('tbody');
+        b.innerHTML += `
+        <tr>                                                      
+            <td>${a.size}</td>
+            <td><img src="${a.image}"></td>
+            <td>${a.Title}</td>
+            <td>${a.Medium}</td>
+            <td>R${a.price}</td>
+            <td><button>delete</button></td>
+            <td><button>edit</button></td>
+        </tr>
+        `
+    })
+};
+tableDisplay()
+
+// sort & filter
+// sort size
+
+
+
+
+
+
+// sort alphabetical
+// let names  = ["John Doe", "Alex Doe", "Peter Doe", "Elon Doe"];
+// let sortedNames = names.sort();
+// console.log(sortedNames);
+let Titles = ["Star Ocean", "Folklore", "Clouded Dance", "Mind Fog", "Baptism"];
+let SortedTitles = Titles.sort();
+console.log(SortedTitles)
+
+let Catalog = 'Catalog';
+let sortCatalog = Catalog.sort();
+console.log(sortCatalog)
+
+// let alpha = document.querySelector('#alpha')
+// alpha.addEventListener('click', (e, item) => {
+//     e.preventDefault()
+//     item.sort()
+//     localStorage.setItem('Catalog', JSON.stringify(art))
+//     console.log(item);
+//     tableDisplay()
+// })
+// let sort = document.getElementById(alpha);
+// sort.addEventListener("click", function(){
+//     document.getElementById("alpha")
+// })
+
+
+// sort price
+
 
 // delete
 
