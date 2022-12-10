@@ -8,7 +8,7 @@
     font-family: 'Cinzel Decorative', cursive;
 }
 :root{
-    --mygreen: rgb(4, 31, 4);
+    --mygreen: #041f04;
     --myplum: plum;
     --secondplum: rgb(184, 131, 184);
     --opacityplum: rgba(221, 160, 221, 0.6);
@@ -16,7 +16,7 @@
 }
 
 header{
-    background-image: url(https://i.pinimg.com/originals/9f/42/53/9f42530c25a1c3497769ed70f3d49bf6.jpg);
+    background-image: url(https://i.postimg.cc/7PNx4LQ8/plum-goldleaf.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 80vh;
@@ -30,7 +30,7 @@ body{
 /* logo drop down & style */
 .logo{
     border-radius: 90px;
-    width: 7rem;
+    width: 20rem;
     padding: 5px;
 }
 
@@ -109,6 +109,7 @@ footer {
 tbody{
     background-image: url(https://pbs.twimg.com/media/Eu2Ys4CXMAAfISc.jpg);
     background-size: cover;
+    text-align: center;
 }
 
 tbody img{
