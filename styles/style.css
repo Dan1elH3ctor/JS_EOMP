@@ -110,6 +110,10 @@ tbody{
     background-image: url(https://pbs.twimg.com/media/Eu2Ys4CXMAAfISc.jpg);
     background-size: cover;
 }
+
+tbody img{
+    width: 100px;
+}
 button{
     background-color: black;
     border-radius: 10px;
